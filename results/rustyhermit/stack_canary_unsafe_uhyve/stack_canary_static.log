@@ -1,0 +1,4 @@
+[*] RustyHermit unsafe stack canary static check
+[*] Target app: /data/unikernels/security-tests/work/rustyhermit-probes/target/x86_64-unknown-hermit/debug/stack_canary_unsafe_probe
+Stack canary symbols: not found
+RESULT_STATIC: FAIL (no stack protector symbols found)

@@ -1,0 +1,88 @@
+[            ][0][[32mINFO [0m] Welcome to Hermit 0.12.0
+[            ][0][[32mINFO [0m] Enabled features: 
+[            ][0][[32mINFO [0m] Built on Sun, 10 May 2026 22:40:01 +0000
+[            ][0][[32mINFO [0m] Kernel starts at 0x7c840000
+[            ][0][[32mINFO [0m] FDT:
+ / {
+    compatible = "hermit,uhyve"
+    #address-cells = <0x2>
+    #size-cells = <0x2>
+
+    memory@7c800000 {
+        device_type = "memory"
+        reg = <0x7c800000 0x4000000>
+    };
+
+    hermit,tsc {
+        khz = <0x27abf6>
+    };
+
+    chosen {
+        bootargs = ""
+    };
+};
+
+[            ][0][[32mINFO [0m] BSS starts at 0x7ca63c70
+[            ][0][[32mINFO [0m] tls_info = Some(
+    TlsInfo {
+        start: 0x7ca3cad8,
+        filesz: 0x20,
+        memsz: 0x70,
+        align: 0x8,
+    },
+)
+[            ][0][[32mINFO [0m] Total memory size: 60 MiB
+[            ][0][[32mINFO [0m] Kernel region: 0x7c800000..0x7cc00000
+[            ][0][[32mINFO [0m] Minimum memory size: 8 MiB
+[            ][0][[32mINFO [0m] Heap: size 44 MB, start address 0x400000000000
+[            ][0][[32mINFO [0m] Heap is located at 0x400000000000..0x400002c00000 (0 Bytes unmapped)
+[            ][0][[32mINFO [0m] FrameAlloc free list:
+        0x7cc03000..        0x7ce00000 (len =           0x1fd000, pages =              509)
+        0x7fa00000..        0x80800000 (len =           0xe00000, pages =             3584)
+[            ][0][[32mINFO [0m] PageAlloc free list:
+    0x400002c00000..    0x800000000000 (len =     0x3ffffd400000, pages =      17179857920)
+[            ][0][[32mINFO [0m] bootargs = 
+[    0.006771][0][[32mINFO [0m] 
+[    0.006812][0][[32mINFO [0m] ========================== CPU INFORMATION ===========================
+[    0.006886][0][[32mINFO [0m] Model:                   uhyve - unikernel hypervisor
+[    0.006928][0][[32mINFO [0m] Frequency:               2599 MHz (from FDT)
+[    0.006977][0][[32mINFO [0m] SpeedStep Technology:    Not Available
+[    0.007014][0][[32mINFO [0m] Features:                MMX SSE SSE2 SSE3 SSSE3 SSE4.1 SSE4.2 AVX AESNI RDRAND MCE FXSR XSAVE VMX RDTSCP CLFLUSH TSC-DEADLINE X2APIC HYPERVISOR FSGSBASE 
+[    0.007064][0][[32mINFO [0m] Physical Address Width:  46 bits
+[    0.007101][0][[32mINFO [0m] Linear Address Width:    48 bits
+[    0.007137][0][[32mINFO [0m] Supports 1GiB Pages:     Yes
+[    0.007173][0][[32mINFO [0m] ======================================================================
+[    0.007220][0][[32mINFO [0m] 
+[    0.007429][0][[32mINFO [0m] Hermit booted on 2026-05-10 23:04:50.080935193 +00:00:00
+[    0.007534][0][[33mWARN [0m] Using default APIC address: 0xfee00000
+[    0.010183][0][[32mINFO [0m] Hermit is running on uhyve!
+[    0.011193][0][[32mINFO [0m] Try to initialize uhyve filesystem
+[    0.011287][0][[32mINFO [0m] Mounting uhyve filesystem at /root
+[    0.011468][0][[32mINFO [0m] Jumping into application
+[    0.011589][0][[33mWARN [0m] Unable to read entropy! Fallback to a naive implementation!
+PROBE_OK
+STACK_EXEC_BEGIN
+[    0.011997][0][[31mERROR[0m] Page fault (#PF)!
+[    0.012045][0][[31mERROR[0m] page_fault_linear_address = 0x400002d1a9bf
+[    0.012081][0][[31mERROR[0m] error_code = PageFaultErrorCode(PROTECTION_VIOLATION | INSTRUCTION_FETCH)
+[    0.012138][0][[31mERROR[0m] fs = 0x400000000FB0
+[    0.012173][0][[31mERROR[0m] gs = 0x7CA62400
+[    0.012207][0][[31mERROR[0m] stack_frame = InterruptStackFrame {
+    instruction_pointer: VirtAddr(
+        0x400002d1a9bf,
+    ),
+    code_segment: SegmentSelector {
+        index: 1,
+        rpl: Ring0,
+    },
+    cpu_flags: RFlags(
+        RESUME_FLAG | IOPL_LOW | INTERRUPT_FLAG | 0x2,
+    ),
+    stack_pointer: VirtAddr(
+        0x400002d1a9a8,
+    ),
+    stack_segment: SegmentSelector {
+        index: 2,
+        rpl: Ring0,
+    },
+}

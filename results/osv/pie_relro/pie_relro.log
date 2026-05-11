@@ -1,0 +1,8 @@
+[*] OSv PIE/RELRO check
+[*] Target: /data/unikernels/osv/build/release.x64/loader-stripped.elf
+ELF type: EXEC
+GNU_RELRO entries: 0
+BIND_NOW entries: 0
+PIE: FAIL
+RELRO: FAIL
+RESULT: PARTIAL/FAIL (missing PIE and/or Full RELRO)

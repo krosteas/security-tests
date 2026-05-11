@@ -1,0 +1,6 @@
+[*] Unikraft W^X check
+[*] Target ELF: /data/unikernels/unikraft/helloworld/.unikraft/build/helloworld_qemu-x86_64.dbg
+Writable+Executable LOAD segments: 0
+Writable+Executable sections:      0
+Executable GNU_STACK headers:      0
+RESULT: PASS (no W+X layout detected)

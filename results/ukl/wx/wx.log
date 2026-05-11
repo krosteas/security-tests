@@ -1,0 +1,7 @@
+[*] UKL W^X check
+[*] Target ELF: /data/unikernels/ukl/linux/vmlinux
+[*] Note: this checks vmlinux/uncompressed ELF, not bzImage.
+Writable+Executable LOAD segments: 1
+Writable+Executable sections:      0
+Executable GNU_STACK headers:      0
+RESULT: FAIL (W+X memory layout detected)

@@ -1,0 +1,19 @@
+[*] RustyHermit PIE/RELRO check
+
+[*] Checking loader: /data/unikernels/rustyhermit/hello-example/target/x86_64-unknown-hermit/debug/hermit-rs-template
+ELF type: DYN
+GNU_RELRO entries: 1
+BIND_NOW entries: 0
+PIE: PASS
+RELRO: PARTIAL
+RESULT (loader): PARTIAL/FAIL
+
+[*] Checking app: /data/unikernels/rustyhermit/hello-example/target/x86_64-unknown-hermit/debug/hermit-rs-template
+ELF type: DYN
+GNU_RELRO entries: 1
+BIND_NOW entries: 0
+PIE: PASS
+RELRO: PARTIAL
+RESULT (app): PARTIAL/FAIL
+
+RESULT: PARTIAL/FAIL (loader or app missing PIE/Full RELRO)

@@ -1,0 +1,17 @@
+[*] RustyHermit W^X check
+
+[*] Auditing loader
+[*] Target ELF: /data/unikernels/rustyhermit/hello-example/target/x86_64-unknown-hermit/debug/hermit-rs-template
+Writable+Executable LOAD segments: 0
+Writable+Executable sections:      0
+Executable GNU_STACK headers:      0
+RESULT (loader): PASS (no W+X layout detected)
+
+[*] Auditing app
+[*] Target ELF: /data/unikernels/rustyhermit/hello-example/target/x86_64-unknown-hermit/debug/hermit-rs-template
+Writable+Executable LOAD segments: 0
+Writable+Executable sections:      0
+Executable GNU_STACK headers:      0
+RESULT (app): PASS (no W+X layout detected)
+
+RESULT: PASS (no W+X layout detected in loader or app)

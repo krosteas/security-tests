@@ -1,0 +1,8 @@
+running local instance
+booting /data/unikernels/.ops/images/aslr_probe ...
+[0.163538] vtbln failed to attach: (status:failed to find free MSI-X slot)
+[0.204243] en1: assigned 10.0.2.15
+PROBE_OK
+MAIN=0x5551c9
+STACK=0xffeb2c7c
+HEAP=0x739310

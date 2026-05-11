@@ -1,0 +1,42 @@
+c[?7l[2J[0mSeaBIOS (version 1.16.3-debian-1.16.3-2)
+
+
+iPXE (https://ipxe.org) 00:03.0 CA00 PCI2.10 PnP PMM+0EFC7E00+0EF07E00 CA00
+Press Ctrl-B to configure iPXE (PCI 00:03.0)...                                                                               
+
+
+Booting from ROM..Powered by
+o.   .o       _ _               __ _
+Oo   Oo  ___ (_) | __ __  __ _ ' _) :_
+oO   oO ' _ `| | |/ /  _)' _` | |_|  _)
+oOo oOO| | | | |   (| | | (_) |  _) :_
+ OoOoO ._, ._:_:_,\_._,  .__,_:_, \___)
+                          Kiviuq 0.20.0
+PROBE_OK
+HEAP_EXEC_BEGIN
+[    0.109125] CRIT: [libkvmplat] <trace.c @   41> RIP: 0000000000032020 CS: 0008
+[    0.111302] CRIT: [libkvmplat] <trace.c @   42> RSP: 0000000000010f58 SS: 0010 EFLAGS: 00010246
+[    0.111755] CRIT: [libkvmplat] <trace.c @   44> RAX: 0000000000000000 RBX: 0000000000032020 RCX: 0000000000000009
+[    0.112278] CRIT: [libkvmplat] <trace.c @   46> RDX: 00000000000003d4 RSI: 000000000000000a RDI: 0000000000139008
+[    0.112799] CRIT: [libkvmplat] <trace.c @   48> RBP: 0000000000010f70 R08: 00000000000003f8 R09: 0000000000000202
+[    0.113327] CRIT: [libkvmplat] <trace.c @   50> R10: 0000000000000002 R11: 000000000012953a R12: 0000000000013020
+[    0.113835] CRIT: [libkvmplat] <trace.c @   52> R13: 0000000000011000 R14: 000000000ffd0040 R15: 0000000000000000
+[    0.114509] CRIT: [libkvmplat] <trace.c @   86> base is 0x10f70 caller is 0x11f561
+[    0.116693] CRIT: [libkvmplat] <trace.c @   86> base is 0x10fe0 caller is 0x1137c9
+[    0.118182] CRIT: [libkvmplat] <trace.c @   86> base is 0x10ff0 caller is 0
+[    0.119189] CRIT: [libkvmplat] <trace.c @   66> 
+[    0.120013] CRIT: [libkvmplat] <trace.c @   66> 10f40: 20 80 13 00 00 00 00 00 20 30 01 00 00 00 00 00
+[    0.121719] CRIT: [libkvmplat] <trace.c @   66> 10f50: 70 0f 01 00 00 00 00 00 41 78 12 00 00 00 00 00
+[    0.123367] CRIT: [libkvmplat] <trace.c @   66> 10f60: 20 30 01 00 00 00 00 00 20 80 13 00 00 00 00 00
+[    0.124998] CRIT: [libkvmplat] <trace.c @   66> 10f70: e0 0f 01 00 00 00 00 00 61 f5 11 00 00 00 00 00
+[    0.126706] CRIT: [libkvmplat] <trace.c @   66> 
+[    0.127503] CRIT: [libkvmplat] <trace.c @   66> 10f60: 20 30 01 00 00 00 00 00 20 80 13 00 00 00 00 00
+[    0.129140] CRIT: [libkvmplat] <trace.c @   66> 10f70: e0 0f 01 00 00 00 00 00 61 f5 11 00 00 00 00 00
+[    0.130777] CRIT: [libkvmplat] <trace.c @   66> 10f80: 00 00 00 00 00 00 00 00 28 50 01 00 00 00 00 00
+[    0.132415] CRIT: [libkvmplat] <trace.c @   66> 10f90: 90 94 13 00 00 00 00 00 03 00 00 00 00 00 00 00
+[    0.134068] CRIT: [libkvmplat] <trace.c @   66> 
+[    0.134864] CRIT: [libkvmplat] <trace.c @   66> 32010: 00 20 03 00 00 00 00 00 00 00 00 00 00 00 00 00
+[    0.136507] CRIT: [libkvmplat] <trace.c @   66> 32020: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+[    0.138142] CRIT: [libkvmplat] <trace.c @   66> 32030: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+[    0.139777] CRIT: [libkvmplat] <trace.c @   66> 32040: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+[    0.141447] CRIT: [libkvmplat] <traps.c @  113> Crashing

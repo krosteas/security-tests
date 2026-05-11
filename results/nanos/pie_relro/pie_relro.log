@@ -1,0 +1,9 @@
+[*] Nanos PIE/RELRO check
+[*] Target guest ELF: /data/unikernels/nanos/output/platform/pc/bin/kernel.elf
+[*] Note: checks packaged guest ELF, not final ops image.
+ELF type: EXEC
+GNU_RELRO entries: 0
+BIND_NOW entries: 0
+PIE: FAIL
+RELRO: FAIL
+RESULT: PARTIAL/FAIL (missing PIE and/or Full RELRO)

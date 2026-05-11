@@ -1,0 +1,9 @@
+[*] UKL PIE/RELRO check
+[*] Target: /data/unikernels/ukl/linux/vmlinux
+[*] Note: checks vmlinux/uncompressed ELF, not bzImage.
+ELF type: EXEC
+GNU_RELRO entries: 0
+BIND_NOW entries: 0
+PIE: FAIL
+RELRO: FAIL
+RESULT: PARTIAL/FAIL (missing PIE and/or Full RELRO)

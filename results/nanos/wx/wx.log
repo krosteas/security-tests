@@ -1,0 +1,7 @@
+[*] Nanos W^X check
+[*] Target ELF: /data/unikernels/nanos/output/platform/pc/bin/kernel.elf
+[*] Note: this checks the guest ELF packaged by ops, not the final Nanos image.
+Writable+Executable LOAD segments: 0
+Writable+Executable sections:      0
+Executable GNU_STACK headers:      0
+RESULT: PASS (no W+X layout detected)
