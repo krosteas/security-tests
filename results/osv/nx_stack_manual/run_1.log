@@ -1,0 +1,22 @@
+[W][15:52:27.574687] pw.conf      | [          conf.c: 1182 try_load_conf()] can't load config client.conf: No such file or directory
+[E][15:52:27.574789] pw.conf      | [          conf.c: 1215 pw_conf_load_conf_for_context()] can't load config client.conf: No such file or directory
+OSv 
+eth0: 192.168.122.15
+Booted up in 268.17 ms
+Cmdline: /hello
+PROBE_OK
+STACK_EXEC_BEGIN
+Aborted
+
+[backtrace]
+0x0000000040222463 <???+1075979363>
+0x00000000403dd5fe <osv::handle_mmap_fault(unsigned long, int, exception_frame*)+30>
+0x00000000402b9c1a <mmu::vm_fault(unsigned long, exception_frame*)+378>
+0x000000004030ea0f <page_fault+143>
+0x000000004030d742 <???+1076942658>
+0x000000004039f850 <osv::application::run_main()+64>
+0x00000000403a1cbc <???+1077550268>
+0x00000000403d8e69 <???+1077775977>
+0x0000000040383d3b <thread_main_c+43>
+0x000000004030e911 <???+1076947217>
+qemu-system-x86_64: terminating on signal 15 from pid 3456556 (timeout)

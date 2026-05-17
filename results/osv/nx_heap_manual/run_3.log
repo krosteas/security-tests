@@ -1,0 +1,9 @@
+[W][16:23:07.000810] pw.conf      | [          conf.c: 1182 try_load_conf()] can't load config client.conf: No such file or directory
+[E][16:23:07.000925] pw.conf      | [          conf.c: 1215 pw_conf_load_conf_for_context()] can't load config client.conf: No such file or directory
+OSv 
+eth0: 192.168.122.15
+Booted up in 278.12 ms
+Cmdline: /hello
+PROBE_OK
+HEAP_EXEC_BEGIN
+HEAP_EXEC_ALLOWED
