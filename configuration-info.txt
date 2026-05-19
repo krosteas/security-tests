@@ -1,4 +1,23 @@
+This file records the experimental configuration metadata for the thesis
+"Comparative Security Benchmarking of Leading Unikernel Systems."
 
+It documents the source states, tool versions, inspected artifacts, artifact
+hashes, and static-check artifact mappings used during the benchmark. The file
+is intended to support reproducibility and traceability of the reported results.
+
+The listed paths are local paths from the university measurement server. They
+are included only to identify the files that were used during the experiments;
+they are not public URLs and are not expected to exist on another machine.
+
+Some tested systems used local or private university-provided work trees. Where
+a benchmark work tree did not contain its own Git metadata, the nearest related
+repository commit recorded on the measurement server is listed instead. The
+commit hashes therefore identify the tested experimental context as precisely as
+possible, but they do not always guarantee that the exact tested artifact can be
+rebuilt directly from a public upstream repository.
+
+Git commit hashes identify source states. SHA256 hashes identify inspected
+binary artifacts.
 
 ==============================
 GIT COMMITS
