@@ -1,0 +1,142 @@
+
+
+==============================
+GIT COMMITS
+==============================
+
+Repo: /data/unikernels/osv
+04fd2ce97f498fa33184272db0cd32198df5a0fb
+?? OSv_Excecution_README.txt
+?? images/test-httpserver.py
+?? openssl-1.1.1k/
+
+Repo: /data/unikernels/unikraft/helloworld
+1add85d53193c5cfc8d9285cbd6905a85ffcc309
+
+Repo: /data/unikernels/rustyhermit/hello-example
+No .git directory found
+
+Repo: /data/unikernels/rustyhermit/loader
+030515eb4af5192404c802fc9fc3609865fd9d49
+?? inside
+
+Repo: /data/unikernels/nanos
+99ee0c2138be0e4817a5a3b6c19ff6c5d1dd85ea
+?? Nano_Excecution_README.txt
+?? hello_client/
+?? hello_world/
+
+Repo: /data/unikernels/ukl
+f66efb6c11a8b47f1c3a8ad9c5ef5a794fc184f0
+ M configure.ac
+ M initrd/buildinitrd.sh
+ M initrd/create-initrd.sh
+ M initrd/init.in
+ M initrd/ukl-base/Dockerfile
+ m linux
+ M run_ukl_net_qemu.sh
+ M run_ukl_qemu.sh
+ M undefined_sys_hack.c
+?? README_FIREWALL_RULESETS.md
+?? UKL_Execution_README.txt
+?? build.log
+?? build_initrd_stress.log
+?? build_nft.log
+?? build_nft_echo.log
+?? build_nft_iperf.log
+?? build_nft_iperf_kernel.log
+?? build_nft_iperf_link.log
+?? build_nft_iperf_link2.log
+?? build_tcpecho.log
+
+Repo: /data/unikernels/security-tests/work/osv-private
+No .git directory found
+
+Repo: /data/unikernels/security-tests/work/unikraft-probes
+No .git directory found
+
+Repo: /data/unikernels/security-tests/work/rustyhermit-probes
+No .git directory found
+
+Repo: /data/unikernels/security-tests/work/ukl-full-aslr
+No .git directory found
+
+==============================
+TOOL VERSIONS
+==============================
+
+QEMU:
+QEMU emulator version 10.1.0 (Debian 1:10.1.0+ds-5ubuntu2.6)
+Copyright (c) 2003-2025 Fabrice Bellard and the QEMU Project developers
+
+Uhyve:
+uhyve 0.5.0
+
+OPS:
+Ops version: 0.1.44
+Nanos version: 0.1.54
+
+GCC default:
+gcc (Ubuntu 15.2.0-4ubuntu4) 15.2.0
+
+GCC 14:
+gcc-14 (Ubuntu 14.3.0-8ubuntu1) 14.3.0
+
+Rustc:
+rustc 1.93.0-nightly (1d60f9e07 2025-12-01)
+
+Cargo:
+cargo 1.93.0-nightly (2a7c49606 2025-11-25)
+
+Kraft:
+
+Kernel/host:
+Linux measure 6.17.0-14-generic #14-Ubuntu SMP PREEMPT_DYNAMIC Fri Jan  9 17:01:16 UTC 2026 x86_64 GNU/Linux
+
+==============================
+INSPECTED ARTIFACTS
+==============================
+
+Artifact: /data/unikernels/security-tests/work/osv-private/build/release.x64/loader-stripped.elf
+-rwxrwxr-x 1 unikernels unikernels 6.4M May 15 15:39 /data/unikernels/security-tests/work/osv-private/build/release.x64/loader-stripped.elf
+/data/unikernels/security-tests/work/osv-private/build/release.x64/loader-stripped.elf: ELF 64-bit LSB executable, x86-64, version 1 (GNU/Linux), dynamically linked, stripped
+83bfdf1c4520768ae81ad17d06c647f11781444fdc2550450b07cc44c06d975f  /data/unikernels/security-tests/work/osv-private/build/release.x64/loader-stripped.elf
+
+Artifact: /data/unikernels/security-tests/work/unikraft-probes/.unikraft/build/helloworld_qemu-x86_64.dbg
+-rwxr-xr-x 1 unikernels unikernels 1.2M May 10 23:29 /data/unikernels/security-tests/work/unikraft-probes/.unikraft/build/helloworld_qemu-x86_64.dbg
+/data/unikernels/security-tests/work/unikraft-probes/.unikraft/build/helloworld_qemu-x86_64.dbg: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), statically linked, with debug_info, not stripped
+518da17a36345ca0c970af54df12dab62b298746fb2bdf8e35f5889afeed2eb3  /data/unikernels/security-tests/work/unikraft-probes/.unikraft/build/helloworld_qemu-x86_64.dbg
+
+Artifact: /data/unikernels/security-tests/work/rustyhermit-probes/target/x86_64-unknown-hermit/debug/aslr_probe
+-rwxrwxr-x 2 unikernels unikernels 21M May 10 22:40 /data/unikernels/security-tests/work/rustyhermit-probes/target/x86_64-unknown-hermit/debug/aslr_probe
+/data/unikernels/security-tests/work/rustyhermit-probes/target/x86_64-unknown-hermit/debug/aslr_probe: ELF 64-bit LSB pie executable, x86-64, version 1 (embedded), static-pie linked, for GNU/<unknown> 0.12.0, with debug_info, not stripped
+9fe21762f894b98995460d7edb14701cf658e4fee4cd6de80db14147211a66a9  /data/unikernels/security-tests/work/rustyhermit-probes/target/x86_64-unknown-hermit/debug/aslr_probe
+
+Artifact: /data/unikernels/nanos/output/platform/pc/bin/kernel.elf
+-rwxrwxr-x 1 unikernels unikernels 12M Nov 14  2025 /data/unikernels/nanos/output/platform/pc/bin/kernel.elf
+/data/unikernels/nanos/output/platform/pc/bin/kernel.elf: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), statically linked, with debug_info, not stripped
+3e1772cedb2d785b09e064cfe352dee15fff829623aa68939438f52b000cffda  /data/unikernels/nanos/output/platform/pc/bin/kernel.elf
+
+Artifact: /data/unikernels/security-tests/work/ukl-full-aslr/linux/vmlinux
+-rwxrwxr-x 1 unikernels unikernels 394M May 16 16:46 /data/unikernels/security-tests/work/ukl-full-aslr/linux/vmlinux
+/data/unikernels/security-tests/work/ukl-full-aslr/linux/vmlinux: ELF 64-bit LSB executable, x86-64, version 1 (GNU/Linux), statically linked, BuildID[sha1]=393f114be1535a444ae0cc73b0d278e5a394ebd3, for GNU/<unknown> 3.2.0, with debug_info, not stripped
+d81170ccf4edb89fe5351401014c86e9496247b64318afdb5f08c7e6bc91822b  /data/unikernels/security-tests/work/ukl-full-aslr/linux/vmlinux
+
+Artifact: /data/unikernels/security-tests/work/ukl-full-aslr/linux/arch/x86/boot/bzImage
+-rw-rw-r-- 1 unikernels unikernels 14M May 16 16:47 /data/unikernels/security-tests/work/ukl-full-aslr/linux/arch/x86/boot/bzImage
+/data/unikernels/security-tests/work/ukl-full-aslr/linux/arch/x86/boot/bzImage: Linux kernel x86 boot executable, bzImage, version 6.3.0 (unikernels@measure) #4 SMP PREEMPT_DYNAMIC Sat May 16 16:46:45 UTC 2026, RO-rootFS, Normal VGA, setup size 512*29, syssize 0xdbede, jump 0x26c 0x8cd88ec0fc8cd239 instruction, protocol 2.15, from protected-mode code at offset 0x3a8 0xdb0391 bytes gzip compressed, relocatable, handover offset 0x190, legacy 64-bit entry point, can be above 4G, 32-bit EFI handoff entry point, 64-bit EFI handoff entry point, EFI kexec boot support, xloadflags bit 5, max cmdline size 2047, init_size 0x2dd7000
+9686e375b5a748abb05a9fa3ae5c475ea0e8752d5986c75f259f171f09bac68f  /data/unikernels/security-tests/work/ukl-full-aslr/linux/arch/x86/boot/bzImage
+
+==============================
+STATIC CHECK ARTIFACT POINTERS
+==============================
+OSv W^X / PIE-RELRO artifact:
+/data/unikernels/security-tests/work/osv-private/build/release.x64/loader-stripped.elf
+Unikraft W^X / PIE-RELRO artifact:
+/data/unikernels/security-tests/work/unikraft-probes/.unikraft/build/helloworld_qemu-x86_64.dbg
+RustyHermit W^X / PIE-RELRO artifact:
+/data/unikernels/security-tests/work/rustyhermit-probes/target/x86_64-unknown-hermit/debug/aslr_probe
+Nanos W^X / PIE-RELRO artifact:
+/data/unikernels/nanos/output/platform/pc/bin/kernel.elf
+UKL W^X / PIE-RELRO artifact:
+/data/unikernels/security-tests/work/ukl-full-aslr/linux/vmlinux
